@@ -36,4 +36,38 @@ print(complex(-3))          #out: (-3+0j)
 print(type(complex(3.2)))   #out: <class 'complex'>
 
 
+//to assign diff. values to diff. variables
+a,b,c= 1,2,3
+print(a)   #1
+print(b)   #2
+print(c)   #3
+
+
+//Augmented assignment operator
+a = 5
+a = a + 5
+print (a)       out: 10
+//OR
+a = 5
+a += 5
+print (a)       out: 10
+
+
 //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
