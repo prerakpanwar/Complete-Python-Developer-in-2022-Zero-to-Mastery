@@ -1,1 +1,6 @@
+#printing name (first program)
 
+print ('Prerak Panwar')                   #output : Prerak Panwar
+name = input('what is your name?')        #input is used to take value from user; output: what is your name?
+print('hey my name is ' + name )          # if user typed name as xyz; output: hey my name is xyz 
+    
