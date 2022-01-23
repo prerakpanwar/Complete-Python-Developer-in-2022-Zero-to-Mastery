@@ -1,6 +1,39 @@
-#printing name (first program)
+//printing name (first program)
+print ('Prerak Panwar')                   #output: Prerak Panwar
+name = input('what is your name?')        #output: what is your name?  (input is used to take value from user) 
+print('hey my name is ' + name )          #output: hey my name is xyz  (if user typed name as xyz) 
 
-print ('Prerak Panwar')                   #output : Prerak Panwar
-name = input('what is your name?')        #input is used to take value from user; output: what is your name?
-print('hey my name is ' + name )          # if user typed name as xyz; output: hey my name is xyz 
-    
+
+//int and float(data types)
+print(type(4+3))        #output: int
+print (type(4-3))       #output: int
+print (type (4*3) )     #output: int
+print (type (4/5) )     #output: float
+print (2 ** 3)          #output: 8      (2 raise to the power 3)
+print (2 ** 2)          #output: 4 
+print (2 // 3)          #output: 0
+print (5 // 4)          #output: 1
+print (12 % 13)         #output: 12     (gives remainder)
+  
+
+//math functions:
+print (round (3.5))      #output: 4
+print (round (3.4))      #output: 3
+print(abs(-20))          #output: 20    (no negative value)
+
+
+//Optional data types:
+print (bin(5))           #output: 0b101  (change into binary representation)
+print (int(0b101))       #output: 5      
+print (int('0b101',2))   #output: 5
+
+complex()          (This is equivalent to (real + imag*1j) where imag defaults to 0.)
+print(complex(3))           #out: (3+0j) 
+print(complex(3.0))         #out: (3+0j)
+print(complex(3.2))         #out: (3.2+0j)
+print(complex(-3.2))        #out: (-3.2+0j)
+print(complex(-3))          #out: (-3+0j)
+print(type(complex(3.2)))   #out: <class 'complex'>
+
+
+//
