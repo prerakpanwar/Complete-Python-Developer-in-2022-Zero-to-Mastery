@@ -78,6 +78,25 @@ c = type(b)
 print(c)                         #OUT: <class 'int'>   
 
 
+//Escape sequence (\) || (\t) || (\n)
+
+#for using apostofy s
+weather = '\t it\'s "kind of" raining outside \n I don\'t want to go to school'
+print(weather)
+
+#for using double quotes
+weather = "\t it's \"kind of\" raining outside \n I don't want to go to school"
+print(weather)
+
+#for using both apostofy s & double quotes + using \t to tab out and \n for new line
+weather = "\t it\'s \"kind of\" raining outside \n I don\'t want to go to school"
+print(weather)
+#OUT:     it's "kind of" raining outside
+      I don't want to go to school
+
+
+//
+
 
 
 
