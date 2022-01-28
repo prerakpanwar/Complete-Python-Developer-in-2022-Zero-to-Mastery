@@ -95,7 +95,22 @@ print(weather)
       I don't want to go to school
 
 
-//
+//FORMATTED STRINGS
+
+name = 'Prerak'
+age = 24
+#normal method
+print ('Hello ' + name + '. You are ' + str(age) + ' years old.')
+
+#using formatted string (f) in python 3
+print (f'Hello {name}. You are {age} years old.')              #OUT: Hello Prerak. You are 24 years old.
+ 
+#using .format() in python 2
+print ('Hello {}. You are {} years old.'.format(name,age))     #OUT: Hello Prerak. You are 24 years old.
+                        #OR
+print ('Hello {0}. You are {1} years old.'.format(name,age))   #OUT: Hello Prerak. You are 24 years old.
+ 
+print ('Hello {1}. You are {0} years old.'.format(name,age))   #OUT: Hello 24. You are Prerak years old.
 
 
 
