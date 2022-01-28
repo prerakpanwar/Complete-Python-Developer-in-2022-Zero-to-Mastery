@@ -109,6 +109,23 @@ print ('Hello {0}. You are {1} years old.'.format(name,age))   #OUT: Hello Prera
  
 print ('Hello {1}. You are {0} years old.'.format(name,age))   #OUT: Hello 24. You are Prerak years old.
 
+@@EXERCISE
+# 1 What would be the output of the below 4 print statements?
+
+print("Hello {}, your balance is {}.".format("Prerak", 245))
+print("Hello {0}, your balance is {1}.".format("Prerak", 245))
+print("Hello {name}, your balance is {amount}.".format(name="Prerak", amount=245))
+print("Hello {0}, your balance is {amount}.".format("Prerak", amount=245))
+
+Answer for all will be the same i.e : Hello Prerak, your balance is 245
+
+# 2 How would you write this using f-string?
+
+Answer :
+name = 'Prerak'
+amount = 245
+print (f"Hello {name}, your balance is {amount}.")
+
 
 //
 
