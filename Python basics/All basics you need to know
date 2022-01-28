@@ -53,8 +53,29 @@ a += 5
 print (a)       out: 10
 
 
-//
+//STRING ' ' OR " " 
 
+print (type ('xyz'))  #OUT: <class 'str'>
+print (type ("xyz"))  #OUT: <class 'str'>
+
+#To print long string on different line
+long_string = '''
+hello my
+name is
+Prerak Panwar
+'''
+print (long_string)
+
+#String concatenation (to add strings together)
+print ('Prerak' + ' ' + 'Panwar')     #OUT:Prerak Panwar
+
+#type conversion (changing int to str, float etc and vice versa)
+print (type(int(str(100))))       #OUT: <class 'int'>
+#OR
+a = str(100)
+b = int(a)
+c = type(b)
+print(c)                         #OUT: <class 'int'>   
 
 
 
