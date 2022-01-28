@@ -3,6 +3,6 @@ How to become a Python 3 Developer and get hired! Build 12+ projects, learn Web 
 
 Skill level: All Levels
 
-I will also upload hand writtent notes later for better understanding.
+I will also upload hand written notes later, for better understanding.
 
 Thank you :)
