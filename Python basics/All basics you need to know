@@ -160,6 +160,11 @@ print(python[::-1])       #OUT:NOTHYP am I
 (REFER NOTES AND 'LINKS' WORD FILE)
 
 
+//Booleans (either True/False)
+print(bool(0))        #OUT: False
+print(bool(1))        #OUT: True
+
+
 //
 
 
