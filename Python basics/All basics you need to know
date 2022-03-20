@@ -127,18 +127,24 @@ amount = 245
 print (f"Hello {name}, your balance is {amount}.")
 
 
+//STRING INDEXES
+# [START:STOP:STEPOVER]
+
+abc= '1234567'
+
+print(abc[0])                 #OUT: 1
+print(abc[-1])                #OUT: 7
+print(abc[0:4])               #OUT: 1234
+print(abc[0:7:1])             #OUT: 1234567
+print(abc[0:7:2])             #OUT: 1357
+print(abc[1:])                #OUT: 234567
+print(abc[:5])                #OUT: 12345
+
+print(abc[0:7:-1])            #OUT: 7654321 (REVERSE STRING)
+      OR
+print(abc[::-1])              #OUT: 7654321 (REVERSE STRING)
+
+
 //
-
-
-
-
-
-
-
-
-
-
-
-
 
 
