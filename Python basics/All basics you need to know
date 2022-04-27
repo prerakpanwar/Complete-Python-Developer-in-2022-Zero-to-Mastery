@@ -165,6 +165,21 @@ print(bool(0))        #OUT: False
 print(bool(1))        #OUT: True
 
 
+//Exercise : Type Conversion
+#program to print your age
+
+birth_year = input ('what\'s your year of birth \n')
+age = 2022 - int(birth_year)
+print(f'your age is: {age}')
+
+
 //
+
+
+
+
+
+
+
 
 
