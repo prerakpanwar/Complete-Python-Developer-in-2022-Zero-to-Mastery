@@ -173,9 +173,19 @@ age = 2022 - int(birth_year)
 print(f'your age is: {age}')
 
 
+//Exercise : Password checker
+
+username= input ('enter your username  ')  #let username as Prerak
+password= input ('enter your password  ')  #let password as Panwar
+
+password_length= len(password)
+hidden_password = '*' * password_length
+print (f'the username is: {username}. The password is : {hidden_password}, which is {password_length} length long.')
+
+output: the username is: Prerak. The password is : ******, which is 6 length long.
+
+
 //
-
-
 
 
 
