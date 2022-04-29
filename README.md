@@ -6,4 +6,6 @@ Skill level: All Levels
 I will also upload hand written notes later, for better understanding.
 Topics that are not present in github will be present in my hand written notes. So, go through github and my notes simultaneously.
 
+Feel free to point out the errors :)
+
 Thank you :)
