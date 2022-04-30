@@ -319,7 +319,28 @@ user2.update({'age': 20, 'username': 'panwar'})
 print(user2)
 
 
-//
+//SETS
+
+# remove dublicate values from the list using set
+my_list = [1,2,2,2,3,4,5,5]
+print (set(my_list))              OUT: {1,2,3,4,5}
+
+
+my_set = {1,2,3,4,4,5,5}
+print (5 in my_set)               OUT:TRUE
+print (len(my_set))               OUT:5  # it only return unique items thats why lenght is 5 not 7
+
+
+print (list(my_set))              OUT: [1,2,3,4,5]  # change set into list
+
+
+my_set1 = {1,2,3}
+new_set = my_set1.copy()  
+
+my_set1.clear()
+
+print (new_set)                       OUT: {1,2,3}
+print (my_set1)                       OUT: set()
 
 
 
