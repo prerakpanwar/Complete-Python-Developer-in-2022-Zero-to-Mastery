@@ -116,13 +116,23 @@ print(duplicates)
 
 #The return keyword is to exit a function and return a value.
 
+#EXAMPLE:
 def sum(num1, num2):
   return (num1 + num2)
 
 print(sum(2,3))       OUT: 5
 
+
+def sum(num1, num2):
+  result = num1 + num2
+  print (f'sum is : {result}')
+
+(sum(2,3))              OUT: sum is : 5         #WITHOUT USING RETURN#
+
+
 #Statements after the return line will not be executed:
 
+#EXAMPLE:
 def sum(num1, num2):
   return (num1 + num2)
   print('xyz')          # THIS PRINT WON'T GET EXECUTED               
@@ -130,9 +140,92 @@ def sum(num1, num2):
 print(sum(2,3))        OUT: 5
 
 
+#NESTED FUNCTIONS
+
+#EXAMPLE:
+def sum (num1, num2):
+  def another_function (n1,n2):
+    return n1 + n2
+
+print(sum(5,10))       OUT: None
+
+
+def sum (num1, num2):
+  def another_function (n1,n2):
+    return n1 + n2
+  return another_function 
+
+total = sum (5,10)
+print(total(5,10))         OUT: 15
+
+# OR
+
+def sum (num1, num2):
+  def another_function (n1,n2):
+    return n1 + n2
+  return another_function (num1, num2)
+
+total = sum (5,10)
+print(total)              OUT: 15
+
+
+//EXERCISE
+
+# age = input("What is your age?: ")
+
+# if int(age) < 18:
+# 	print("Sorry, you are too young to drive this car. Powering off")
+# elif int(age) > 18:
+# 	print("Powering On. Enjoy the ride!");
+# elif int(age) == 18:
+# 	print("Congratulations on your first year of driving. Enjoy the ride!")
+
+#1. Wrap the above code in a function called checkDriverAge(). Whenever you call this function, you will get prompted for age. 
+# Notice the benefit in having checkDriverAge() instead of copying and pasting the function everytime?
+
+def checkDriverAge() :
+  age = input("What is your age?: ")
+  if int(age) < 18:
+    print("Sorry, you are too young to drive this car. Powering off")
+  elif int(age) > 18:
+    print("Powering On. Enjoy the ride!")
+  elif int(age) == 18:
+    print("Congratulations on your first year of driving. Enjoy the ride!")
+
+checkDriverAge()
+
+
+
+#2 Instead of using the input(). Now, make the checkDriverAge() function accept an argument of age, so that if you enter:
+#checkDriverAge(92);
+#it returns "Powering On. Enjoy the ride!"
+
+def checkDriverAge(age) :
+  if int(age) < 18:
+    print("Sorry, you are too young to drive this car. Powering off")
+  elif int(age) > 18:
+    print("Powering On. Enjoy the ride!")
+  elif int(age) == 18:
+    print("Congratulations on your first year of driving. Enjoy the ride!")
+
+
+checkDriverAge(92)
+
+
+#also make it so that the default age is set to 0 if no argument is given.
+
+def checkDriverAge(age = 0) :
+  if int(age) < 18:
+    print("Sorry, you are too young to drive this car. Powering off")
+  elif int(age) > 18:
+    print("Powering On. Enjoy the ride!")
+  elif int(age) == 18:
+    print("Congratulations on your first year of driving. Enjoy the ride!")
+
+checkDriverAge()
+
+
 //
-
-
 
 
 
