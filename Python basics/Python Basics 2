@@ -98,6 +98,38 @@ Python’s print() function comes with a parameter called ‘end’. By default,
 You can end a print statement with any character/string using this parameter.
 
 
+//FIND DUBLICATES IN A LIST AND PRINT THEM ONCE IN  NEW LIST USING LOOPS
+
+some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
+
+#ANSWER
+new_list = []
+for value in some_list:
+    if some_list.count(value) > 1:
+        if value not in new_list:
+            new_list.append(value)
+
+print(duplicates)
+
+
+//RETURN
+
+#The return keyword is to exit a function and return a value.
+
+def sum(num1, num2):
+  return (num1 + num2)
+
+print(sum(2,3))       OUT: 5
+
+#Statements after the return line will not be executed:
+
+def sum(num1, num2):
+  return (num1 + num2)
+  print('xyz')          # THIS PRINT WON'T GET EXECUTED               
+
+print(sum(2,3))        OUT: 5
+
+
 //
 
 
