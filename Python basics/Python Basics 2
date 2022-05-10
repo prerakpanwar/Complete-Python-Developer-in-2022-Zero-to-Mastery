@@ -267,6 +267,36 @@ def super_func (*a, **b):
 super_func(1,2,3,4,5,num1=5,num2=10)      #OUT:30
 
 
+//EXERCISE #print max even number from the list
+
+[2,3,1,4,5,6,10,9,6]
+
+def highest_even (a):
+  even = []
+  for x in a:
+    if x % 2 ==0:
+      even.append(x)
+  return max (even)
+print (highest_even([2,3,1,4,5,6,10,9,6]))
+
+
+//#WALRUS OPERATOR
+
+a = 'helloooooooooo'
+
+if ((n := len(a)) > 10):
+    print(f"too long {n} elements")
+
+while ((n := len(a)) > 1):
+    print(n)
+    a = a[:-1]
+
+print(a)
+
+OUT: 14,13,12,...........,2,h
+
+
+//
 
 
 
