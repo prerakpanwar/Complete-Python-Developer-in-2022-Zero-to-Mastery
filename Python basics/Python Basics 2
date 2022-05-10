@@ -225,7 +225,46 @@ def checkDriverAge(age = 0) :
 checkDriverAge()
 
 
-//
+//*args and **kwargs
+
+example:
+def super_func (a):
+  print (sum(a))
+
+super_func(1,2,3,4,5)            #OUT: error takes 1 argument but 5 were given
+
+
+#to solve this we use *args
+
+def super_func (*a):
+  return (sum(a))                 
+
+print (super_func(1,2,3,4,5))     #OUT: 15 
+
+#OR
+
+def super_func (*a):
+  print (sum(a))
+
+super_func(1,2,3,4,5)             #OUT: 15
+
+
+def super_func (*a):
+  print (a)                  #returns a TUPLE
+  print (sum(a))
+
+super_func(1,2,3,4,5)       #OUT: (1,2,3,4,5)
+                                  15
+                                  
+
+def super_func (*a, **b):
+  print(b)                    #returns a dict
+  total = 0
+  for x in b.values():
+    total += x
+  print (sum(a) + total)
+
+super_func(1,2,3,4,5,num1=5,num2=10)      #OUT:30
 
 
 
