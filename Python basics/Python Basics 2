@@ -296,11 +296,38 @@ print(a)
 OUT: 14,13,12,...........,2,h
 
 
+//NONLOCAL KEYWORD
+
+# Scope - what variables do I have access to?
+
+def outer():
+    x = "local"
+    def inner():
+        nonlocal x
+        x = "nonlocal"
+        print("inner:", x)         OUT: inner: nonlocal
+    inner()
+    print("outer:", x)             OUT: outer: nonlocal
+outer()
+
+#1 - start with local
+#2 - Parent local?
+#3 - global
+#4 - built in python functions
+
+
+def outer():
+    x = "local"
+    def inner():
+        
+        x = "nonlocal"
+        print("inner:", x)         OUT: inner: nonlocal
+    inner()
+    print("outer:", x)             OUT: outer: local
+outer()
+
+
 //
-
-
-
-
 
 
 
