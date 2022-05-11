@@ -307,7 +307,7 @@ def outer():
         x = "nonlocal"
         print("inner:", x)         OUT: inner: nonlocal
     inner()
-    print("outer:", x)             OUT: outer: nonlocal
+    print("outer:", x)             OUT: outer: nonlocal       #modified
 outer()
 
 #1 - start with local
@@ -323,8 +323,10 @@ def outer():
         x = "nonlocal"
         print("inner:", x)         OUT: inner: nonlocal
     inner()
-    print("outer:", x)             OUT: outer: local
+    print("outer:", x)             OUT: outer: local           #NOT modified
 outer()
+print (x)    # OUT: name 'x' is not defined   ##as we are done with the outer(), python automatially removes or empties the bookshelf assigned for 'x variable'
+              so that other programs can use that memory shelf##
 
 
 //
