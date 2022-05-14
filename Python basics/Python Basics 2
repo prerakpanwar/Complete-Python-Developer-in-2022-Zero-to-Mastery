@@ -329,19 +329,95 @@ print (x)    # OUT: name 'x' is not defined   ##as we are done with the outer(),
               so that other programs can use that memory shelf##
 
 
-//
+//EXERCISE
 
+#STRINGS
+Replace the character H with a J.
+txt = "Hello World"
+txt = txt.replace('H', 'J)
 
+Return the string without any whitespace at the beginning or the end.
+txt = " Hello World "
+x = txt.strip()
 
+Insert the correct syntax to add a placeholder for the age parameter.
+age = 36
+txt = "My name is John, and I am {}"
+print(txt.format(age))
 
+#LIST
 
+Use negative indexing to print the last item in the list.
 
+fruits = ["apple", "banana", "cherry"]
+print(fruits[-1])
 
+Use the correct syntax to print the number of items in the list.
+fruits = ["apple", "banana", "cherry"]
+print(len(fruits))
 
+#SET
 
+Use the add method to add "orange" to the fruits set.
+fruits = {"apple", "banana", "cherry"}
+fruits.add('orange')
 
+Use the correct method to add multiple items (more_fruits) to the fruits set.
+fruits = {"apple", "banana", "cherry"}
+more_fruits = ["orange", "mango", "grapes"]
+fruits.update(more_fruits)      # List is passed as an parameter which
+                                # gets automatically converted to a set
+                                
+#DICT
 
+Use the get method to print the value of the "model" key of the car dictionary.
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(car.get('model'))
 
+Change the "year" value from 1964 to 2020.
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car['year'] = 2020
+
+Add the key/value pair "color" : "red" to the car dictionary.
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car["color"] = "red"
+
+#LOOPS
+
+Use the correct short hand syntax to write the following conditional expression in one line:
+if 5 > 2: 
+    print("Yes")
+else
+  print("No")
+
+print("Yes") if 5 > 2 else print("No")
+
+Print a message once the condition is false.
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i is no longer less than 6")
+
+In the loop, when the item value is "banana", jump directly to the next item.
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
 
 
 
