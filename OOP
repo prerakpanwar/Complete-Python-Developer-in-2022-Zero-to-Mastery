@@ -1,4 +1,4 @@
-#OOP
+// OOP
 print(type(None))
 print(type(True))
 print(type(5))
@@ -8,5 +8,27 @@ print(type([]))
 print(type(()))
 print(type({}))
 
+OUTPUT: 
+<class 'NoneType'>
+<class 'bool'>
+<class 'int'>
+<class 'float'>
+<class 'str'>
+<class 'list'>
+<class 'tuple'>
+<class 'dict'>
 
 
+//CREATING OUR OWN CLASS
+
+class BigObject:
+    #CAN ADD CODE HERE LATER
+    pass
+
+obj1 = BigObject()
+obj2 = BigObject()
+obj3 = BigObject()
+print(type(obj1))
+
+OUTPUT:
+<class '__main__.BigObject'>
