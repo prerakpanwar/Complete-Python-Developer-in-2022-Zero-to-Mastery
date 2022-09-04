@@ -1,5 +1,5 @@
 # import random  # OR from random import randint
-#
+#running without terminal
 # answer = (random.randint(1, 10))  # OR answer = randint(1, 10)
 #
 # while True:
@@ -24,7 +24,7 @@ import sys
 # the Python runtime environment. It allows operating on the interpreter as it provides access to the variables and
 # functions that interact strongly with the interpreter.
 
-answer = randint(int(sys.argv[1]), int(sys.argv[2]))
+answer = randint(int(sys.argv[1]), int(sys.argv[2]))                #runnig with terminal and giving parameters like : python3 random_number.py 5 10
 
 while True:
     try:
