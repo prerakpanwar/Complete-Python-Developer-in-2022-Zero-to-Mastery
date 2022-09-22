@@ -7,3 +7,8 @@ import sys
 first = sys.argv[1]
 last = sys.argv[2]
 print(f'hiiiii {first} {last}')
+
+------------------------------------------
+import sys
+print("This is the name of the program:", sys.argv[0])
+print("Argument List:", str(sys.argv))
