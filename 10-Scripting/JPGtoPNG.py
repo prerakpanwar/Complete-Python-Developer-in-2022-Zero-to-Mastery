@@ -1,4 +1,4 @@
-import sys					#to take input in command line : run using python3 JPGtoPNG.py pokedex\ new\ (for windows)
+import sys					#to take input in command line ,run using 'python3 JPGtoPNG.py pokedex\ new\' (for windows)
 import os					#to grab path ; we can use pathlib too
 from PIL import Image
 
