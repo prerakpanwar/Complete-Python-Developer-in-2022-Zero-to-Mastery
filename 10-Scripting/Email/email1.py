@@ -36,4 +36,5 @@ with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
   smtp.starttls()
   smtp.login('sender's email', 'password')
   smtp.send_message(email)
+  smtp.quit()
   print('all good boss!')
