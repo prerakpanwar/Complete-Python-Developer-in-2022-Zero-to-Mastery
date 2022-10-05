@@ -7,9 +7,8 @@ res2 = requests.get('https://news.ycombinator.com/news?p=2')
 soup = BeautifulSoup(res.text, 'html.parser')
 soup2 = BeautifulSoup(res2.text, 'html.parser')
 
-links = soup.select('.titleline')  # heads up! .storylink changed to .titlelink
+links = soup.select('.titleline')
 subtext = soup.select('.subtext')
-# heads up! .storylink changed to .titlelink
 links2 = soup2.select('.titleline')
 subtext2 = soup2.select('.subtext')
 
