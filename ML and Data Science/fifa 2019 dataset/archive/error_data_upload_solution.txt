@@ -1,0 +1,8 @@
+"Error! file path is not UTF-8 encoded, saving disabled"
+
+
+To solve the problem please follow the steps:
+1 - Find the CSV file used -> Right mouse button -> Opening method -> Select Notepad
+2 - Open the file and select File -> “Save as”, you can see that the default code is ANSI.
+Select UTF-8 to save a copy again, and then open it with PD.Read_csv().
+There will be no error:
